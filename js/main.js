@@ -20,3 +20,7 @@ const age = Number(prompt("Inserisci l'età del passeggero"));
 
 // il prezzo del biglietto è definito in base ai km (0.21 € al km)
 const price_per_km = 0.21;
+
+// prezzo senza sconto
+const price_without_discount = km * price_per_km;
+console.log(price_without_discount);
