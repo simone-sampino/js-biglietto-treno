@@ -10,3 +10,13 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
 TIP: per controllare che la vostra logica sui prezzi funzioni correttamente, provate a verificare quanto segue:
 100km, 10 anni => prezzo corretto: €16.80
 100km, 70 anni => prezzo corretto: €12.60 */
+
+
+// chiedere all'utente il numero di chilometri che vuole percorrere
+const km = Number(prompt('Inserisci quanti chilometri intendi percorrere'));
+
+// e l'età del passeggero
+const age = Number(prompt("Inserisci l'età del passeggero"));
+
+// il prezzo del biglietto è definito in base ai km (0.21 € al km)
+const price_per_km = 0.21;
