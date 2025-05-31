@@ -21,6 +21,21 @@ const age = Number(prompt("Inserisci l'età del passeggero"));
 // il prezzo del biglietto è definito in base ai km (0.21 € al km)
 const price_per_km = 0.21;
 
-// prezzo senza sconto
-const price_without_discount = km * price_per_km;
-console.log(price_without_discount);
+// variabile prezzo
+let price = km * price_per_km;
+console.log(price);
+
+// va applicato uno sconto del 20% per i minorenni
+const minor = 0.8;
+
+// va applicato uno sconto del 40% per gli over 65
+const senior = 0.6;
+
+// IF
+if (age < 18) {
+    price = price * minor;
+    console.log('Il tuo biglietto scontato del 20% costa ' + price);
+} else if (age > 65) {
+    price = price * senior;
+    console.log('Il tuo biglietto scontato del 40% costa ' + price);
+}
